@@ -1,0 +1,19 @@
+<div class="column">
+  <div class="card">
+    <div class="card-content">
+      <p class="title">
+        <% if show_link %>
+          <%= link_to customer.name, customer%>
+        <% else %>
+          <%= customer.name %>
+        <% end %>
+      </p>
+      <p>Phone: <%= customer.phone_number %></p>
+    </div>
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        email: <br><%= customer.email %>
+      </p>
+    </footer>
+  </div>
+</div>

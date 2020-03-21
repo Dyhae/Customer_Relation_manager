@@ -6,4 +6,4 @@ class Customer < ApplicationRecord
     record.errors.add(attr, 'must start with upper case') if value =~ /\A[a-z]/
   end
 
-en
+end
