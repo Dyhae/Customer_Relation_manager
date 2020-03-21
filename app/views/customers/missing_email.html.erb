@@ -1,0 +1,5 @@
+<div class="columns">
+  <%= render partial: 'customers/customer',
+             collection: @customers_missing_email,
+             locals: { show_link: true } %>
+</div>

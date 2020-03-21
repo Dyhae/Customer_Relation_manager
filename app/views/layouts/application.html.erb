@@ -4,12 +4,19 @@
     <title>CustomerRelationManager</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
   </head>
 
   <body>
+    <h1><%= link_to 'Customer',root_path %></h1>
+    <ul>
+      <li><h2><%= link_to 'Alphabetized', customers_alphabetized_path %></h2></li>
+      <li><h2><%= link_to 'Missing_emails',customers_missing_email_path %></h2></li>
+    </ul>
     <%= yield %>
   </body>
 </html>
