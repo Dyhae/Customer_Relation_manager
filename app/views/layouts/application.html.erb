@@ -12,11 +12,17 @@
   </head>
 
   <body>
-    <h1><%= link_to 'Customer',root_path %></h1>
-    <ul>
-      <li><h2><%= link_to 'Alphabetized', customers_alphabetized_path %></h2></li>
-      <li><h2><%= link_to 'Missing_emails',customers_missing_email_path %></h2></li>
-    </ul>
-    <%= yield %>
+    <div class="section">
+      <h1 class="title is-1"><%= link_to 'Customer',root_path %></h1>
+      <nav class="navbar margin_top_body" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand columns is-mobile">
+            <h2 class="column has-background-primary spacingbetween_bar is-size-3"><%= link_to 'Alphabetized', customers_alphabetized_path %></h2>
+            <h2 class="column has-background-primary spacingbetween_bar is-size-3"><%= link_to 'Missing_emails',customers_missing_email_path %></h2>
+        </div>
+      </nav>
+      <div class="has-margin-top-5 margin_top_body">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

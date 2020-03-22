@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ .margin_top_body {
+   margin-top: 10px;
+ }
+
+ .spacingbetween_bar {
+   margin: 5px;
+   border-radius: 10px;
+ }
