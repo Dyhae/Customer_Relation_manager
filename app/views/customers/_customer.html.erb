@@ -3,12 +3,23 @@
     <div class="card-content">
       <p class="title">
         <% if show_link %>
-          <%= link_to customer.name, customer%>
+          <%= link_to customer_path(customer) do%>
+            <%= customer.name + " " + customer.surname%>
+          <% end%>
         <% else %>
           <%= customer.name %>
         <% end %>
       </p>
-      <p>Phone: <%= customer.phone_number %></p>
+      <% if customer.image.present? %>
+        <div class="card-image size">
+          <figure class="image is-4by3">
+            <%= image_tag customer.image, class:"border_radius" %>
+          </figure>
+        </div>
+      <% end %>
+      <div class="phone_margin">
+          <p>Phone: <%= customer.phone_number %></p>
+      </div>
     </div>
     <footer class="card-footer">
       <p class="card-footer-item">

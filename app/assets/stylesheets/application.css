@@ -14,11 +14,32 @@
  *= require_self
  */
 
+
  .margin_top_body {
    margin-top: 10px;
+   border: 1px solid white;
+   padding: 10px;
+
  }
 
  .spacingbetween_bar {
    margin: 5px;
    border-radius: 10px;
  }
+
+
+ .size{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+  /* border: 1px solid black; */
+}
+
+.phone_margin {
+  margin-top: 5px;
+}
+
+.background_color {
+  background: linear-gradient(to top ,white 15%, lightgrey 85%);
+
+}
